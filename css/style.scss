@@ -3,5 +3,77 @@ $fontLight: 400;
 $fontSemiBold: 600;
 $fontBold: 700;
 
+$clrBlue: hsl(223, 87%, 63%);
+$clrPaleBlue: hsl(223, 100%, 88%);
+$clrRed: hsl(354, 100%, 66%);
+$clrGray: hsl(0, 0%, 59%);
+$clrDarkBlue: hsl(209, 33%, 12%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    padding: 3rem 2.5rem;
+    text-align: center;
+    font-family: $font;
+    .logo{
+        margin-bottom: 1.5rem;
+        img{
+            width: 18%;
+        }
+    }
+    .heading{
+        .heading__title{
+            font-weight: $fontLight;
+            color: $clrGray;
+            font-size: 20px;
+            margin: 1rem;
+            .bold{
+                font-weight: $fontBold;
+                color: $clrDarkBlue;
+            }
+        }
+        .heading__paragraph{
+            margin-bottom: 2rem;
+        }
+    }
+    .form__wrapper{
+        form{
+            display: flex;
+            flex-direction: column;
+            input{
+                padding: 1rem;
+                border-radius: 2rem;
+                font-size: 14px;
+                margin-bottom: 0.75rem;
+                outline: none;
+            }
+            .input__email{
+                color: $clrPaleBlue;
+                border: 1px solid $clrPaleBlue;
+            }
+            .btn{
+                background-color: $clrBlue;
+                border: 1px solid $clrBlue;
+                color: #fff;
+            }
+            
+        }
+    }
+    .main-image{
+        margin: 5rem 0;
+        img{
+            width: 100%;
+        }
+    }
+
+    
+
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
