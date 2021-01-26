@@ -15,6 +15,7 @@ $clrDarkBlue: hsl(209, 33%, 12%);
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 .container{
     padding: 3rem 2.5rem;
@@ -51,6 +52,10 @@ $clrDarkBlue: hsl(209, 33%, 12%);
                 font-size: 14px;
                 margin-bottom: 0.75rem;
                 outline: none;
+                
+            }
+            ::placeholder{
+                color: $clrPaleBlue;
             }
             .input__email{
                 color: $clrPaleBlue;
@@ -70,8 +75,21 @@ $clrDarkBlue: hsl(209, 33%, 12%);
             width: 100%;
         }
     }
-
-    
+    .socials{
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                margin-right: 2rem;
+                a{
+                    color: $clrBlue;
+                    border: 1px solid $clrBlue;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
 
 }
 
