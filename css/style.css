@@ -47,7 +47,7 @@
           flex-direction: column;
 }
 
-.container .form__wrapper form input {
+.container .form__wrapper form input, .container .form__wrapper form .btn {
   padding: 1rem;
   border-radius: 2rem;
   font-size: 14px;
@@ -72,8 +72,14 @@
 }
 
 .container .form__wrapper form .input__email {
-  color: #c2d3ff;
+  color: #151f29;
   border: 1px solid #c2d3ff;
+}
+
+.container .form__wrapper form .error {
+  font-style: italic;
+  color: red;
+  font-size: 12px;
 }
 
 .container .form__wrapper form .btn {
@@ -97,6 +103,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .container .socials ul li {
@@ -108,6 +115,11 @@
   border: 1px solid #4f7df3;
   padding: 0.5rem;
   border-radius: 50%;
+}
+
+.container .socials ul li .fa-facebook-f {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .attribution {

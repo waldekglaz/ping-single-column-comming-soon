@@ -46,7 +46,7 @@ $clrDarkBlue: hsl(209, 33%, 12%);
         form{
             display: flex;
             flex-direction: column;
-            input{
+            input, .btn{
                 padding: 1rem;
                 border-radius: 2rem;
                 font-size: 14px;
@@ -58,13 +58,19 @@ $clrDarkBlue: hsl(209, 33%, 12%);
                 color: $clrPaleBlue;
             }
             .input__email{
-                color: $clrPaleBlue;
+                color: $clrDarkBlue;
                 border: 1px solid $clrPaleBlue;
+            }
+            .error{
+                font-style: italic;
+                color: red;
+                font-size: 12px;
             }
             .btn{
                 background-color: $clrBlue;
                 border: 1px solid $clrBlue;
                 color: #fff;
+                
             }
             
         }
@@ -79,13 +85,19 @@ $clrDarkBlue: hsl(209, 33%, 12%);
         ul{
             display: flex;
             justify-content: center;
+            margin-bottom: 2rem;
             li{
                 margin-right: 2rem;
+                
                 a{
                     color: $clrBlue;
                     border: 1px solid $clrBlue;
                     padding: 0.5rem;
                     border-radius: 50%;
+                }
+                .fa-facebook-f{
+                    padding-left:0.25rem ;
+                    padding-right:0.25rem ;
                 }
             }
         }
