@@ -8,6 +8,8 @@
 }
 
 .container {
+  max-width: 1920px;
+  margin: 0 auto;
   padding: 3rem 2.5rem;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
@@ -24,7 +26,7 @@
 .container .heading .heading__title {
   font-weight: 400;
   color: #969696;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 1rem;
 }
 
@@ -80,6 +82,8 @@
   font-style: italic;
   color: red;
   font-size: 12px;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .container .form__wrapper form .btn {
@@ -91,6 +95,7 @@
 .container .form__wrapper form .btn:hover {
   background-color: #fff;
   color: #4f7df3;
+  font-weight: 600;
 }
 
 .container .main-image {
@@ -139,5 +144,54 @@
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (min-width: 400px) {
+  .form__wrapper {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container .logo img {
+    width: 8%;
+  }
+  .container .heading .heading__title {
+    font-size: 3rem;
+  }
+  .container .form__wrapper {
+    width: 60%;
+  }
+  .container .form__wrapper form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .form__wrapper form .input__email {
+    -ms-flex-preferred-size: 68%;
+        flex-basis: 68%;
+  }
+  .container .form__wrapper form .btn {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .container .form__wrapper form .error {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .container .main-image img {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
