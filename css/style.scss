@@ -70,7 +70,11 @@ $clrDarkBlue: hsl(209, 33%, 12%);
                 background-color: $clrBlue;
                 border: 1px solid $clrBlue;
                 color: #fff;
-                
+                &:hover{
+                    background-color: #fff;
+                    color: $clrBlue;
+
+                }
             }
             
         }
@@ -94,6 +98,10 @@ $clrDarkBlue: hsl(209, 33%, 12%);
                     border: 1px solid $clrBlue;
                     padding: 0.5rem;
                     border-radius: 50%;
+                    &:hover{
+                        background-color: $clrBlue;
+                        color: #fff;
+                    }
                 }
                 .fa-facebook-f{
                     padding-left:0.25rem ;

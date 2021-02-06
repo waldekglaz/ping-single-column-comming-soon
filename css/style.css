@@ -88,6 +88,11 @@
   color: #fff;
 }
 
+.container .form__wrapper form .btn:hover {
+  background-color: #fff;
+  color: #4f7df3;
+}
+
 .container .main-image {
   margin: 5rem 0;
 }
@@ -115,6 +120,11 @@
   border: 1px solid #4f7df3;
   padding: 0.5rem;
   border-radius: 50%;
+}
+
+.container .socials ul li a:hover {
+  background-color: #4f7df3;
+  color: #fff;
 }
 
 .container .socials ul li .fa-facebook-f {
